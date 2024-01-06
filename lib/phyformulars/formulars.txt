@@ -1,0 +1,34 @@
+KINEMATICS :
+  s=ut+ 1/2at^2 (Equation of motion)
+  v = u + at (Velocity equation)
+  V^2 = u^2 + 2as (Velocity-time-distance relationship)
+
+DYNAMICS : 
+  F = ma (Newton's second law)
+  W = mg (Weight)
+  f = μN (Frictional force)
+
+CIRCULAR MOTION : 
+  V = wr (Linear velocity in circular motion)
+  a = v^2/r (Centripetal acceleration)
+
+ENERGY : 
+  Ek = 1/2mv^2 (Kinetic energy)
+  Ep = mgh (Potential energy due to gravity)
+  W = Fd (Work done)
+
+THERMODYNAMICS : 
+  Q = mcΔT (Heat transfer)
+  PV = nRT (Ideal gas law)
+
+WAVES : 
+  v = fλ (Wave equation)
+  f = 1/T (Frequency and period relationship)
+
+OPTICS : 
+  1/f = 1/do + 1/di (Lens formula)
+  v = u + at (Mirror formula)
+
+ELECTROMAGNETISM : 
+  V = IR (ohm's law)
+  Q = It (Charge = Current x Time)
