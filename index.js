@@ -1,32 +1,32 @@
-import phyFormular from './lib//phyformulars';
+let FormularsLib = ('./lib/phyformulars');
 
-import math from './lib/math';
+let mathLib = ('./lib/math');
 
-const mathCalc = math;
+const mathCalc = mathLib;
 
 
-const app = {};
+let app = {};
 
 app.config = {
   'timeBetweenFormulars' : 1000
 };
 
 
-app.printAPhyFormular = () => {
+app.printAFormular = () => {
 
-  const allPhyFormulars = phyFormular.allPhyFormulars();
+  let allFormulars = FormularsLib.allFormulars();
 
-  const numberOfPhyFormulars = allPhyFormulars.length;
+  let numberOfFormulars = allFormulars.length;
 
-  const randomFormular = mathCalc.getRandomNumber(1, numberOfPhyFormulars);
+  let randomNumber = mathLib.getRandomNumber(1, numberOfFormulars);
 
-  const selectedFormulars = allPhyFormulars[randomFormular - 1];
+  let selectedFormulars = allFormulars[randomNumber - 1];
 
   console.log(selectedFormulars);
 };
 
 app.indefiniteLoop = () => {
-  setInterval(app.printAPhyFormular, app.config.timeBetweenFormulars);
+  setInterval(app.printAFormular,app.config.timeBetweenFormulars);
 }
 
 app.indefiniteLoop();
