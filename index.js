@@ -1,13 +1,13 @@
 
 // DEPENDENCIES
-let FormularsLib = ('./lib/phyformulars');
-let mathLib = ('./lib/math');
+const FormularsLib = require('./lib/phyformulars/index.js');
+const mathLib = require('./lib/math');
 
 const mathCalc = mathLib;
 
 
 // MODEL SCAFOLDING
-let app = {};
+const app = {};
  
 
 // CONFIGURATION
@@ -19,13 +19,13 @@ app.config = {
 // FUNCTION DECLARATION
 app.printAFormular = () => {
 
-  let allFormulars = FormularsLib.allFormulars();
+  const allFormulars = FormularsLib.allFormulars();
 
-  let numberOfFormulars = allFormulars.length;
+  const numberOfFormulars = allFormulars.length;
 
-  let randomNumber = mathLib.getRandomNumber(1, numberOfFormulars);
+  const randomNumber = mathLib.getRandomNumber(1, numberOfFormulars);
 
-  let selectedFormulars = allFormulars[randomNumber - 1];
+  const selectedFormulars = allFormulars[randomNumber - 1];
 
   console.log(selectedFormulars);
 };
