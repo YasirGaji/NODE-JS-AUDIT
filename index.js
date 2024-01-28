@@ -1,17 +1,22 @@
-let FormularsLib = ('./lib/phyformulars');
 
+// DEPENDENCIES
+let FormularsLib = ('./lib/phyformulars');
 let mathLib = ('./lib/math');
 
 const mathCalc = mathLib;
 
 
+// MODEL SCAFOLDING
 let app = {};
+ 
 
+// CONFIGURATION
 app.config = {
   'timeBetweenFormulars' : 1000
 };
 
 
+// FUNCTION DECLARATION
 app.printAFormular = () => {
 
   let allFormulars = FormularsLib.allFormulars();
@@ -25,6 +30,8 @@ app.printAFormular = () => {
   console.log(selectedFormulars);
 };
 
+
+// FUNCTION INVOCATION
 app.indefiniteLoop = () => {
   setInterval(app.printAFormular,app.config.timeBetweenFormulars);
 }
