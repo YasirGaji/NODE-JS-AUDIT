@@ -20,4 +20,4 @@ This is a JS application that utilizes a math script as a library to render seve
   
   1. None
 
-## [View Article](https://sinc-partners.vercel.app/)
+## [View Article](#)
